@@ -28,35 +28,46 @@ public class BlockEntity {
     private String blockHash;
     @Column(name = "body_hash")
     @JSONField(name = "body_hash")
+    @ApiModelProperty(value = "body_hash")
     private String bodyHash;
     @Column(name = "chain_id")
     @JSONField(name = "chain_id")
+    @ApiModelProperty(value = "chain_id")
     private int chainId;
     @Column(name = "difficulty")
     @JSONField(name = "difficulty")
+    @ApiModelProperty(value = "difficulty")
     private String difficulty;
     @Column(name = "extra")
     @JSONField(name = "extra")
+    @ApiModelProperty(value = "extra")
     private String extra;
     @Column(name = "gas_used")
     @JSONField(name = "gas_used")
+    @ApiModelProperty(value = "gas_used")
     private long gasUsed;
     @Column(name = "nonce")
     @JSONField(name = "nonce")
+    @ApiModelProperty(value = "nonce")
     private long nonce;
     @Column(name = "height")
     @JSONField(name = "height")
+    @ApiModelProperty(value = "height")
     private long height; //uint_64
     @Column(name = "parent_hash")
     @JSONField(name = "parent_hash")
+    @ApiModelProperty(value = "parent_hash")
     private String parentHash;
     @Column(name = "state_root")
     @JSONField(name = "state_root")
+    @ApiModelProperty(value = "state_root")
     private String stateRoot;
     @Column(name = "txn_accumulator_root")
     @JSONField(name = "txn_accumulator_root")
+    @ApiModelProperty(value = "txn_accumulator_root")
     private String txnAccumulatorRoot;
     @Column(name = "create_at")
     @JSONField(name = "create_at")
+    @ApiModelProperty(value = "create_at")
     private Date createAt;
 }

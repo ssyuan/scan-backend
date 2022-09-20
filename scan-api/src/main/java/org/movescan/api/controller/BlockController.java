@@ -28,9 +28,9 @@ public class BlockController {
         return null;
     }
 
-    @ApiOperation("get block by height")
-    @GetMapping("/{network}/summary/{id}")
-    public Block getBlockSummary(@PathVariable("network") String network, @PathVariable("id") String id) {
+    @ApiOperation("get block summary by hash")
+    @GetMapping("/{network}/summary/{hash}")
+    public Block getBlockSummary(@PathVariable("network") String network, @PathVariable("hash") String hash) {
         return null;
     }
 
